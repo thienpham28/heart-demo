@@ -1,0 +1,46 @@
+{
+    margin :0;
+    padding:0;
+    box-sizing:border-box;
+    outline: nore;
+    text-decoration:nore;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background:black     ;
+
+}
+.heart  {
+    width: 70px;
+    height: 70px;
+    background: red ;
+    position  :relative;
+    box-shadow: 20px red ;
+                transform: rotate(-45deg);
+    animation: heart 1s linear infinite 0.5
+
+}
+.heart::before{
+    content:"";
+    position: absolute;
+    width : 100%;
+    height: 100%;
+    background:red;
+    border-radius: 50%;
+    left:0;
+    top:-50%;
+}
+.heart::after{
+    content:"";
+    position: absolute;
+    width : 100%;
+    height: 100%;
+    background: red;
+    border-radius: 50%;
+    top:0%;
+    right:-50%;
